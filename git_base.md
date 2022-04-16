@@ -248,5 +248,19 @@ D:\teach_source\20_wlw\git\01>git remote add origin https://github.com/ynkonghao
 添加完成之后，以后如果希望提交到远程工厂，不用再使用remote，直接使用push完成提交
 
 ```shell
+git push ##相当于执行了 git push -u origin master
+```
 
+此时如果希望在一个新的文件夹中导入远程工厂的内容
+
+```shell
+git clone https://github.com/ynkonghao/20wlw_test.git
+```
+
+clone是所有用户都可以clone，但是只有授权用户才能push，clone完成之后就会有完整的远程工厂的内容，此时，可以对内容进行修改，修改完成之后又可以进行push（要有权限）
+
+此时如果要在另外一个工厂中获取最新的更新
+
+```shell
+git pull
 ```
